@@ -1,0 +1,55 @@
+/* Define um estilo para o corpo da página */
+body {
+    display: flex; /* Faz com que o corpo da página use o modelo de layout flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    background: url('../temp/bodyBackground.png') no-repeat; /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilos para a classe 'wrapper' */
+.wrapper {
+    width: 430px; /* Define a largura do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    border: 2px solid rgba(255,255,255, .2); /* Define uma borda de 2px com cor e transparência */
+    backdrop-filter: blur(20px); /* Aplica um efeito de desfoque ao fundo */
+    box-shadow: 0 0 10px rgba(0,0,0,.2); /* Adiciona uma sombra ao redor do elemento */
+    color: #fff; /* Define a cor do texto como branco */
+    border-radius: 10px; /* Adiciona uma borda arredondada */
+    padding: 30px 40px; /* Adiciona preenchimento interno */
+}
+
+/* Estilos para o botão de registrar */
+#registrarBtn {
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.643); /* Adiciona uma sombra ao botão */
+    color: #ffffff9a!important; /* Define a cor do texto */
+}
+
+#registrarBtn:hover {
+    box-shadow: 1px 2px 10px rgb(255, 255, 255); /* Adiciona uma sombra ao botão quando hover */
+    color: #ffffff!important; /* Define a cor do texto quando hover */
+}
+
+/* Estilos para o botão de voltar */
+#voltarBtn {
+    position: absolute; /* Define a posição absoluta */
+    top: 20px; /* Define a distância do topo */
+    left: 20px; /* Define a distância da esquerda */
+    background-color: black; /* Define a cor de fundo do botão */
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.643); /* Adiciona uma sombra ao botão */
+}
+
+#voltarBtn a {
+    text-decoration: none; /* Remove a decoração de link */
+    color: #fffbfb84!important; /* Define a cor do texto */
+}
+
+#voltarBtn a:hover {
+    color: #fffbfbb1!important; /* Define a cor do texto quando hover */
+}
+
+#voltarBtn:hover {
+    box-shadow: 1px 2px 10px rgb(255, 255, 255); /* Adiciona uma sombra ao botão quando hover */
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-BR"> <!-- Início do documento HTML com a especificação do idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Configuração do conjunto de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração da viewport para dispositivos móveis -->
+    <title>Feed</title> <!-- Título da página exibido na aba do navegador -->
+
+    
+    <!-- Inclusão do arquivo CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Inclusão do arquivo CSS de ícones do Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Inclusão do arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./chat.css">
+    <!-- Pré-Carregamento -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" as="style">
+    <!-- Bibioteca de icons -->
+    <link rel="stylesheet" href="caminho/para/fontawesome-free-5.x.x/css/all.min.css">
+    <!-- Biblioteca SortableJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+    <!-- fonte -->
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a id="nomeSistema" href="./tarefasEprojetos.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Your Leaf</span>
+                        <i class='ms-2 bx bxs-leaf'></i>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="../tarefasEprojetos.html" id="tarefasEprojetosBtn" class="nav-link align-middle px-0">
+                                <i class='bx bx-home-alt-2'></i>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Tarefas e Projetos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class='bx bxs-cuboid'></i>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                            <div>
+                                <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="./chat.html" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">Feed</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">Calendário</span></a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">Docs</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">E-mail</span></a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">Drive</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 ms-4"> <span class="d-none d-sm-inline">Bate-papo</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <a href="../CRM.html" class="nav-link px-0 align-middle">
+                                <i class='bx bxs-grid-alt'></i>
+                                <i class="fs-4 bi-table"></i> <span id="CRMBTN" class="ms-1 d-none d-sm-inline">CRM</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class='bx bxs-pie-chart-alt-2'></i>
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Empresa</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="ms-4 d-none d-sm-inline">Marketing</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0 ms-4 "> <span class="d-none d-sm-inline">Gerênciamento do investimento</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="fotoUsuario user-avatar rounded-circle">U</div>
+                            <span class="d-none d-sm-inline mx-1" id="username"></span>
+
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a id="verPerfilBtn" class="dropdown-item">Perfil</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" onclick="deslogar()" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 h-100">
+
+                <div id="FEED">
+                    <div class="div-feed-global">
+
+                        <div id="conversation-cards" class="div-conversations">
+                            <!-- <div class="post shadow">
+                                <h3>@Caiua0800</h3>
+                                <p>Esse é um exemplo de post</p>
+                                <span class="time-message">15:14</span>
+                            </div> -->
+                        </div>
+                        
+
+                        <!-- Adicionar Post -->
+                        <div class="new-post-div">
+                            <textarea id="new-Text-Post" placeholder="Poste algo"></textarea>
+                            <button id="sendPost"><img class="img-env" src="./enviar-btn.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- página de perfil do usuário -->
+                <div id="perfil" class="d-none shadow">
+                    <div class="w-100 bg-light rounded d-flex justify-content-center flex-column p-5">
+                        <div id="fotoUsuarioPerfilPage" style="position: relative;" class="w-100 d-flex justify-content-center">
+                            <div>
+                                <div class="shadow fotoUsuario user-avatar2 rounded-circle">U</div>
+                                <button id="editarPerfilBtn" style="position: absolute;top: 0; right: 0;" class="btn btn-primary btn-sm">Editar</button>
+                                <button id="salvarPerfilBtn" style="position: absolute;top: 0; right: 0;" class="d-none btn btn-success btn-sm">Salvar</button>
+                                <button id="cancelarPerfilBtn" style="position: absolute;top: 0; right: 70px;" class="d-none btn btn-danger btn-sm">Cancelar</button>
+                            </div>
+                        </div>
+                        <div id="infoUser" class="mb-5 d-flex justify-content-center flex-column mt-5">
+                            <div default class="d-flex flex-column w-100">
+                                <label for="nomeUsuario">Nome de exibição</label>
+                                <input class="rounded border shadow" disabled id="nomeUsuario" type="text" >
+                                <span id="dangerInfo" class="text-danger d-none">O nome não pode ser o mesmo do antigo</span>
+                            </div>
+                            <div class="d-flex flex-column w-100">
+                                <label for="emailUsuario">E-mail</label>
+                                <input class="rounded border shadow" disabled id="emailUsuario" type="text" >
+                            </div>
+                            <div class="d-flex flex-column w-100">
+                                <label for="senhaUsuario">Senha</label>
+                                <input class="rounded border shadow" disabled id="senhaUsuario" type="password"  value="0000000000">
+                                <span" class="text-info"><a href="./esqueceuSenha.html" class="altPin">Alterar senha</a></span>
+                            </div>
+                        </div>
+
+                        <div id="moreInfo" class="mt-5">
+                            <h5>Data da criação da conta: <strong id="dataCriacaoUsuario"></strong></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- Inclusão do arquivo JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Inclusão do arquivo JavaScript do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <!-- Inclusão do arquivo JavaScript personalizado -->
+    <script src="./chat.js"></script>
+</body>
+</html>

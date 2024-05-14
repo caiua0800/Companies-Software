@@ -1,0 +1,122 @@
+/* Define estilos padrão para todos os elementos */
+* {
+    margin: 0%; /* Remove a margem padrão */
+    padding: 0%; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Faz com que a largura e altura incluam o preenchimento e a borda */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilos para o corpo da página */
+body {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    background: url('../temp/bodyBackground.png') no-repeat; /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilos para o contêiner principal */
+.wrapper {
+    width: 430px; /* Define a largura do contêiner */
+    background: transparent; /* Define o fundo como transparente */
+    border: 2px solid rgba(255,255,255, .2); /* Adiciona uma borda sólida com transparência */
+    backdrop-filter: blur(20px); /* Aplica um efeito de desfoque ao fundo */
+    box-shadow: 0 0 10px rgba(0,0,0,.2); /* Adiciona uma sombra ao redor do contêiner */
+    color: #fff; /* Define a cor do texto como branco */
+    border-radius: 10px; /* Adiciona uma borda arredondada */
+    padding: 30px 40px; /* Adiciona preenchimento interno */
+}
+
+/* Estilos para os cabeçalhos dentro do contêiner */
+.wrapper h1 {
+    font-size: 36px; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para as caixas de entrada de texto */
+.wrapper .input-box {
+    position: relative; /* Define a posição relativa para os ícones dentro da caixa */
+    width: 100%; /* Define a largura como 100% */
+    height: 50px; /* Define a altura */
+    margin: 30px 0; /* Adiciona margem */
+}
+
+.input-box input {
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+    border: 2px solid rgba(255,255,255, .2); /* Adiciona uma borda sólida com transparência */
+    border-radius: 40px; /* Adiciona uma borda arredondada */
+    padding-left: 10px; /* Adiciona preenchimento à esquerda */
+    font-weight: 600; /* Define a espessura da fonte */
+}
+
+.input-box input::placeholder {
+    color: #fff; /* Define a cor do espaço reservado */
+}
+
+.input-box i {
+    position: absolute; /* Define a posição absoluta para os ícones */
+    right: 20px; /* Define a posição à direita */
+    top: 50%; /* Define a posição verticalmente no meio */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 20px; /* Define o tamanho do ícone */
+}
+
+/* Estilos para o texto 'Lembre-se de mim' e 'Esqueceu a senha?' */
+.wrapper .remember-forgot {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui os elementos igualmente */
+    font-size: 14.5px; /* Define o tamanho da fonte */
+    margin: -15px 0 15px; /* Adiciona margem */
+}
+
+.remember-forgot label input {
+    accent-color: #fff; /* Define a cor de destaque */
+    margin-right: 3px; /* Adiciona margem à direita */
+}
+
+.remember-forgot a {
+    color: #fff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para o botão */
+.wrapper .btn {
+    width: 100%; /* Define a largura como 100% */
+    height: 45px; /* Define a altura */
+    background: #fff; /* Define o fundo como branco */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+    border-radius: 40px; /* Adiciona uma borda arredondada */
+    box-shadow: 0 0 10px rgba(0,0,0,.1); /* Adiciona uma sombra ao botão */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    font-weight: 600; /* Define a espessura da fonte */
+}
+
+/* Estilos para o link de registro */
+.wrapper .register-link {
+    font-size: 14.5px; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0 15px; /* Adiciona margem */
+}
+
+.register-link p a {
+    color: #fff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a decoração de texto */
+    font-weight: 600; /* Define a espessura da fonte */
+}
+
+.register-link p a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

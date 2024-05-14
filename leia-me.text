@@ -1,0 +1,7 @@
+'compressed' é onde vão ficar temporariamente as imagens comprimidas para serem mandadas pro FireStorage
+'temp' são as imagens usadas no CSS
+'HTML' é onde fica as páginas
+'Servidor' Pasta do Servidor
+'Scripts' todos os scripts deverão estar aqui
+'style' CSS personalizado
+'(package-lock e package).json' são os pacotes instalados junto com 'node_modules'

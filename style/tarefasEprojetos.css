@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@500;600;700;800&display=swap');
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(36, 69, 232); /* Cor de fundo roxo */
+    color: white; /* Cor do texto branco */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px; /* Centraliza verticalmente o texto */
+    border-radius: 50%; /* Para deixar a imagem com formato de círculo */
+}
+
+
+body {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */ 
+    font-family: 'Poppins', sans-serif!important;
+
+    background-image: linear-gradient( 115deg, #001669, #007296 1%, #007296 11%, #015673 15%, 
+    #000 23.57%, transparent 23.57%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #292784 23.57%, #0c0949 41%, #000 45%,
+	transparent 45%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #1b0f87 45%, #25177b 50%, #2c23aa 52%, 
+    #2a1b9d 55%, transparent 45%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #a3b516 55%, #08bb47 68%,  #1d4a12 73%, 
+    transparent 73%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #9ea81c 73%, #d9ff00 100% );
+}
+
+#nomeSistema{
+    cursor: pointer;
+}
+
+.altPin{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#fotoUsuarioPerfilPage{
+    position: relative;
+}
+
+.user-avatar2 {
+    width: 150px !important;
+    height: 150px !important;
+    background-color: rgb(36, 69, 232) !important; /* Cor de fundo roxo */
+    color: rgb(255, 255, 255) !important; /* Cor do texto branco */
+    font-size: 80px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border-radius: 50% !important; /* Para deixar a imagem com formato de círculo */
+    display: flex !important; /* Torna o elemento um container flexível */
+    justify-content: center !important; /* Centraliza horizontalmente */
+    align-items: center !important; /* Centraliza verticalmente */
+}
+
+#dataCriacaoUsuario{
+    font-size: 0.8em;
+}
+
+#tarefasEprojetosBtn:hover{
+    cursor: pointer;
+}
+
+#SearchTimeBar{
+    background-color: rgba(41, 2, 2, 0);
+    padding: 10px;
+}
+
+#procurarGeral{
+    background-color: rgba(227, 224, 224, 0.438);
+    border: 0;
+    padding: 10px;
+}
+
+.position-relative{
+    padding: 10px;
+}
+
+#hora{
+    padding: 15px;
+}
+
+.div1Tarefas{
+    /* background-color: antiquewhite; */
+    align-items: center;
+}
+
+.minhasTarefasTitulo{
+    font-size: 26px;
+    padding: 10px;
+    color: white;
+}
+
+.criarTarefaBTN{
+    background-color: rgb(233, 222, 17);
+    width: 120px;
+    padding: 10px;
+    border: 0; 
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.criarTarefaBTN:hover{
+    background-color: rgba(255, 255, 255, 0.576);
+    border:  solid rgb(236, 236, 220);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.salvarTarefaBTN{
+    background-color: rgb(28, 148, 17);
+    width: 120px;
+    padding: 10px;
+    border: 0; 
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+    transition: width 0.5s ease;
+}
+.salvarTarefaBTN:hover{
+    background-color: rgba(255, 255, 255, 0.576);
+    border:  solid rgb(236, 236, 220);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.inputFiltroPesquisa{
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table{
+    margin: 20px;
+}
+
+.divTable{
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+    height: 60vh;
+    position: relative;
+}
+
+.tarefasVaziasDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo-tarefasVazias{
+    font-weight: 500;
+    color: #000000ae;
+}
+
+.para-text{
+    text-align: center;
+    font-size: 12px;
+    color: #00000078;
+}
+
+tr textarea{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    max-width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    -ms-appearance: none; 
+}
+
+.custom-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+.custom-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.custom-menu-item:hover {
+    background-color: #e5e5e5;
+}
+
+.selecionarChecksBtn{
+    background-color: rgb(17, 150, 233);
+    width: 160px;
+    padding: 10px;
+    border: 0; 
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.selecionarChecksBtn:hover{
+    background-color: rgba(255, 255, 255, 0.576);
+    border:  solid rgb(236, 236, 220);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.removeChecksBtn{
+    background-color: rgb(17, 150, 233);
+    width: 180px;
+    padding: 10px;
+    border: 0; 
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.removeChecksBtn:hover{
+    background-color: rgba(255, 255, 255, 0.576);
+    border:  solid rgb(236, 236, 220);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.deleteChecksBtn{
+    background-color: rgb(255, 3, 3);
+    width: 160px;
+    padding: 10px;
+    border: 0; 
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.deleteChecksBtn:hover{
+    background-color: rgba(255, 9, 9, 0.839);
+    border:  solid rgb(236, 236, 220);
+    transition: background-color 0.4s ease-in-out;
+}
+
+#myTable th,
+#myTable td {
+    max-width: 100px; /* Ajuste o valor conforme necessário */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse o tamanho máximo */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar conteúdo cortado */
+    white-space: nowrap; /* Impede quebrar o texto em várias linhas */
+}
+
+#CRMBTN{
+    cursor: pointer;
+}

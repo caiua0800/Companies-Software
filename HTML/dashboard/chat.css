@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@500;600;700;800&display=swap');
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(36, 69, 232); /* Cor de fundo roxo */
+    color: white; /* Cor do texto branco */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px; /* Centraliza verticalmente o texto */
+    border-radius: 50%; /* Para deixar a imagem com formato de círculo */
+}
+
+body {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */ 
+    font-family: 'Poppins', sans-serif!important;
+
+    background-image: linear-gradient( 115deg, #001669, #007296 1%, #007296 11%, #015673 15%, 
+    #000 23.57%, transparent 23.57%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #292784 23.57%, #0c0949 41%, #000 45%,
+	transparent 45%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #1b0f87 45%, #25177b 50%, #2c23aa 52%, 
+    #2a1b9d 55%, transparent 45%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #a3b516 55%, #08bb47 68%,  #1d4a12 73%, 
+    transparent 73%, transparent 100% ),
+
+    linear-gradient( 109deg, transparent, #9ea81c 73%, #d9ff00 100% );
+}
+
+#nomeSistema{
+    cursor: pointer;
+}
+
+.altPin{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#fotoUsuarioPerfilPage{
+    position: relative;
+}
+
+.user-avatar2 {
+    width: 150px !important;
+    height: 150px !important;
+    background-color: rgb(36, 69, 232) !important; /* Cor de fundo roxo */
+    color: rgb(255, 255, 255) !important; /* Cor do texto branco */
+    font-size: 80px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border-radius: 50% !important; /* Para deixar a imagem com formato de círculo */
+    display: flex !important; /* Torna o elemento um container flexível */
+    justify-content: center !important; /* Centraliza horizontalmente */
+    align-items: center !important; /* Centraliza verticalmente */
+}
+
+#dataCriacaoUsuario{
+    font-size: 0.8em;
+}
+
+#tarefasEprojetosBtn:hover{
+    cursor: pointer;
+}
+
+#SearchTimeBar{
+    background-color: rgba(41, 2, 2, 0);
+    padding: 10px;
+}
+
+#procurarGeral{
+    background-color: rgba(227, 224, 224, 0.438);
+    border: 0;
+    padding: 10px;
+}
+
+.position-relative{
+    padding: 10px;
+}
+
+#hora{
+    padding: 15px;
+}
+
+.div-feed-global {
+    height: 100vh;
+    background-color: #bdf8fb;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post-div {
+    background-color: #fdfdfd;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
+}
+
+#new-Text-Post{
+    width: 90%;
+    border-radius: 8px;
+}
+
+.img-env{
+    width: 50px;
+}
+
+.new-post-div button{
+    width: 80px;
+}
+
+.div-conversations {
+    flex: 1; /* Ajusta o tamanho da div de acordo com o espaço disponível */
+    background-color: #0fa2c3;
+    overflow-y: auto; /* Adiciona barra de rolagem se necessário */
+    padding: 30px;
+    
+}
+
+.post{
+    background-color: #f5f5f563;
+    width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    line-height: 0.6;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.post h3{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.post p{
+    padding-left: 30px;
+}
+
+.time-message{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #0000009f;
+}
